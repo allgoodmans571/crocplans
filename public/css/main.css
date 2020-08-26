@@ -41,6 +41,18 @@ html {
  * A better looking default horizontal rule
  */
 
+ @font-face {
+  font-family: Crock; /* Гарнитура шрифта */
+  src: url("../fonts/Croc-Regular.ttf"); /* Путь к файлу со шрифтом */
+ }
+
+body{
+  font-family: Crock, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
 hr {
   display: block;
   height: 1px;
@@ -86,6 +98,111 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+.container{
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro__inner{
+  color: #00A460
+}
+
+.logo{
+  width: 55%;
+}
+
+.logo__img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo__inner{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.intro__title{
+  position: absolute;
+  right: 20%;
+  top: 27%;
+  font-size: 9.5em;
+  text-transform: uppercase;
+}
+
+.intro__article{
+  width: 65%;
+  margin-left: 12.5%;
+}
+
+.intro__subtitle{
+  margin: 5% 0;
+  font-size: 64px;
+}
+
+.intro__text{
+  width: 85%;
+  font-size: 24px;
+}
+
+
+.section{
+  padding: 50px 0;
+}
+
+.section__header{
+  font-size: 64px;
+  margin-left: 5%;
+  color: #00A460
+}
+
+.purpose{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.purpose__item{
+  width: 22%;
+  height: 170px;
+  border-radius: 15%;
+  position: relative;
+  cursor: pointer;
+}
+.purpose__item.purpose__item-p{
+  background-color: #7027E2;
+}
+
+.purpose__item.purpose__item-r{
+  background-color: #FF645A;
+}
+
+.purpose__item.purpose__item-o{
+  background-color: #FFA436;
+}
+
+.purpose__item.purpose__item-b{
+  background-color: #475DEB;
+}
+
+.purpose__item.purpose__item-pi{
+  background-color: #93278F;
+}
+
+.purpose__text{
+  position: absolute;
+  padding: 2px 13px;
+  left: 15%;
+  bottom: 15%;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15%;
+}
+
+
 
 /* ==========================================================================
    Helper classes
