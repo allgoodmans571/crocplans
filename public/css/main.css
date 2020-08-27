@@ -151,6 +151,7 @@ textarea {
 
 .section{
   padding: 50px 0;
+  overflow: hidden;
 }
 
 .section__header{
@@ -159,19 +160,25 @@ textarea {
   color: #00A460
 }
 
-.purpose{
+.carousel-container{
   display: flex;
-  justify-content: space-around;
+  transform: translateX(29px);
+  transition: all .6s ease-in-out;
+}
+
+.carousel-purpose{
   margin-top: 5%;
+  width: 100%;
 }
 
 .purpose__item{
-  width: 22%;
-  height: 170px;
+  width: 293px;
+  height: 165px;
   border-radius: 15%;
+  margin-right: 10px;
   position: relative;
-  cursor: pointer;
 }
+
 .purpose__item.purpose__item-p{
   background-color: #7027E2;
 }
@@ -198,8 +205,32 @@ textarea {
   left: 15%;
   bottom: 15%;
   color: #fff;
-  border: 1px solid #fff;
+  border: .7px solid rgba(255, 255, 255, .6);
   border-radius: 15%;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+
+.purpose__text:hover{
+  border: 1px solid #fff;
+}
+
+.list{
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 0 5px 6px rgb(48, 48, 48);
+  padding: 40px 40px 30px;
+  border-radius: 7px;
+}
+
+.list__header{
+  font-size: 48px;
+}
+
+.wishlist__item{
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 
