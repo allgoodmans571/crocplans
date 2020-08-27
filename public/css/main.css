@@ -131,6 +131,7 @@ textarea {
   top: 27%;
   font-size: 9.5em;
   text-transform: uppercase;
+  font-weight: 900;
 }
 
 .intro__article{
@@ -141,6 +142,7 @@ textarea {
 .intro__subtitle{
   margin: 5% 0;
   font-size: 64px;
+  font-weight: 700;
 }
 
 .intro__text{
@@ -150,7 +152,7 @@ textarea {
 
 
 .section{
-  padding: 50px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -162,21 +164,24 @@ textarea {
 
 .carousel-container{
   display: flex;
-  margin-left: 70px;
+  
   transition: all .6s ease-in-out;
 }
 
 .carousel-purpose{
-  margin-top: 5%;
+  margin: 5% 0;
   width: 100%;
+  margin-left: 50px;
+  position: relative;
 }
 
 .purpose__item{
-  width: 423px;
+  width: 323px;
   height: 165px;
-  border-radius: 15%;
+  border-radius: 15px;
   margin-right: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .purpose__item.purpose__item-p{
@@ -208,31 +213,147 @@ textarea {
   border: .7px solid rgba(255, 255, 255, .6);
   border-radius: 15%;
   transition: all .2s linear;
-  cursor: pointer;
 }
+
+.purpose__item.active .purpose__text{
+  color: #000;
+  background-color: #fff;
+}
+
+.prevBtn, .nextBtn{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.prevBtn{
+  position: absolute;
+  left: -55px;
+  top: 35%;
+  z-index: 1000;
+}
+
+.nextBtn{
+  position: absolute;
+  right: 4%;
+  top: 35%;
+  z-index: 1000;
+}
+
+.prev, .next{
+  height: 45px;
+  width: 45px;
+}
+
 
 .purpose__text:hover{
   border: 1px solid #fff;
 }
 
+.wishlist{
+  padding: 80px 0 0;
+}
+
+.wishlist__inner{
+  display: flex;
+  justify-content: space-around;
+  background-color: #68676C;
+  min-height: 600px;
+}
+
 .list{
-  width: 60%;
-  margin: 0 auto;
+  width: 30%;
   box-shadow: 0 5px 6px rgb(48, 48, 48);
-  padding: 40px 40px 30px;
+  padding: 10px 30px 20px;
   border-radius: 7px;
+  margin-top: 100px;
+  background-color: #fff;
+  border-radius: 15%;
 }
 
 .list__header{
-  font-size: 48px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .wishlist__item{
   margin-top: 10px;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 18px;
 }
 
+@media (max-width: 990px){
+  .intro__title{
+    font-size: 7.5em;
+  }
+  
+  .intro__article{
+    width: 80%;
+  }
+
+  .intro__subtitle{
+    font-size: 48px;
+  }
+
+  .intro__text{
+    font-size: 18px;
+  }
+
+}
+
+
+@media (max-width: 770px){
+  .intro__title{
+    font-size: 5.5em;
+  }
+  
+  .intro__subtitle{
+    font-size: 32px;
+  }
+
+  .intro__text{
+    font-size: 18px;
+  }
+  
+  .purpose__item{
+    width: 203px;
+    height: 165px;
+  }
+  .section__header{
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 545px){
+  .logo{
+    width: 65%;
+  }
+  
+  .purpose__item{
+    height: 150px;
+  }
+  
+  .section__header{
+    font-size: 32px;
+  }
+
+  .intro__title{
+    font-size: 3.5em;
+  }
+  
+  .intro__subtitle{
+    font-size: 16px;
+  }
+
+  .intro__text{
+    font-size: 14px;
+  }
+
+  .intro__article{
+    margin-left: 5.5%;
+    width: 90%;
+  }
+
+}
 
 
 /* ==========================================================================
