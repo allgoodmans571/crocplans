@@ -25,11 +25,11 @@ const prevBtn3 = document.querySelector(".prevBtn3")
 const prevBtn4 = document.querySelector(".prevBtn4")
 const prevBtn5 = document.querySelector(".prevBtn5")
 
-var widthContainer1 = 303 * count1.length
-var widthContainer2 = 303 * count2.length
-var widthContainer3 = 303 * count3.length
-var widthContainer4 = 303 * count4.length
-var widthContainer5 = 303 * count5.length
+var widthContainer1 = 323 * count1.length
+var widthContainer2 = 323 * count2.length
+var widthContainer3 = 323 * count3.length
+var widthContainer4 = 323 * count4.length
+var widthContainer5 = 323 * count5.length
 
 
 
@@ -42,31 +42,39 @@ container3.style.width = `${widthContainer3}px`
 container4.style.width = `${widthContainer4}px`
 container5.style.width = `${widthContainer5}px`
 
-var position1 = 29;
-var position2 = 29;
-var position3 = 29;
-var position4 = 29;
-var position5 = 29;
+var position1 = parseInt(window.getComputedStyle(container1).marginLeft);
+var positionStatic = parseInt(window.getComputedStyle(container1).marginLeft);
+console.log(positionStatic)
+var position2 = parseInt(window.getComputedStyle(container1).marginLeft);
+
+var position3 = parseInt(window.getComputedStyle(container1).marginLeft);
+
+var position4 = parseInt(window.getComputedStyle(container1).marginLeft);
+
+var position5 = parseInt(window.getComputedStyle(container1).marginLeft);
+
 
 nextBtn1.addEventListener("click", ()=>{
-    position1 = position1 - 303
+    position1 = position1 - 323
     
     position1 = Math.max(-widthContainer1 - position1, position1)
-    
+    console.log(position1)
     container1.style.transform = "translateX(" + String(position1) + "px)"
 });
 
 prevBtn1.addEventListener("click", ()=>{
-    position1 += 303
-    position1 = Math.min(29, position1)
-
+    position1 += 323
+    console.log(position1)
+    position1 = Math.min(0, position1)
+    console.log(position1)
     container1.style.transform = "translateX(" + String(position1) + "px)"
+    console.log(container1.style.transform)
 });
 
 
 
 nextBtn2.addEventListener("click", ()=>{
-    position2 = position2 - 303
+    position2 = position2 - 323
     
     position2 = Math.max(-widthContainer2 - position2, position2)
     
@@ -74,15 +82,15 @@ nextBtn2.addEventListener("click", ()=>{
 });
 
 prevBtn2.addEventListener("click", ()=>{
-    position2 += 303
-    position2 = Math.min(29, position2)
+    position2 += 323
+    position2 = Math.min(0, position2)
 
     container2.style.transform = "translateX(" + String(position2) + "px)"
 });
 
 
 nextBtn3.addEventListener("click", ()=>{
-    position3 = position3 - 303
+    position3 = position3 - 323
     
     position3 = Math.max(-widthContainer3 - position3, position3)
     
@@ -91,14 +99,14 @@ nextBtn3.addEventListener("click", ()=>{
 
 
 prevBtn3.addEventListener("click", ()=>{
-    position3 += 303
-    position3 = Math.min(29, position3)
+    position3 += 323
+    position3 = Math.min(0, position3)
 
     container3.style.transform = "translateX(" + String(position3) + "px)"
 });
 
 nextBtn4.addEventListener("click", ()=>{
-    position4 = position4 - 303
+    position4 = position4 - 323
     
     position4 = Math.max(-widthContainer4 - position4, position4)
     
@@ -107,14 +115,14 @@ nextBtn4.addEventListener("click", ()=>{
 
 
 prevBtn4.addEventListener("click", ()=>{
-    position4 += 303
-    position4 = Math.min(29, position4)
+    position4 += 323
+    position4 = Math.min(0, position4)
 
     container4.style.transform = "translateX(" + String(position4) + "px)"
 });
 
 nextBtn5.addEventListener("click", ()=>{
-    position5 = position5 - 303
+    position5 = position5 - 323
     
     position5 = Math.max(-widthContainer5 - position5, position5)
     
@@ -122,8 +130,8 @@ nextBtn5.addEventListener("click", ()=>{
 });
 
 prevBtn5.addEventListener("click", ()=>{
-    position5 += 303
-    position5 = Math.min(29, position5)
+    position5 += 323
+    position5 = Math.min(0, position5)
 
     container5.style.transform = "translateX(" + String(position5) + "px)"
 });

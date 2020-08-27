@@ -162,7 +162,7 @@ textarea {
 
 .carousel-container{
   display: flex;
-  transform: translateX(29px);
+  margin-left: 70px;
   transition: all .6s ease-in-out;
 }
 
@@ -172,10 +172,10 @@ textarea {
 }
 
 .purpose__item{
-  width: 293px;
+  width: 423px;
   height: 165px;
   border-radius: 15%;
-  margin-right: 10px;
+  margin-right: 20px;
   position: relative;
 }
 
