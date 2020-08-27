@@ -6,7 +6,7 @@ app.use('/public', express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
 
-  res.sendfile(__dirname + '/html/index.html');
+  res.sendFile(__dirname + '/html/index.html');
 });
 
 console.log("Сервер запущен...");
