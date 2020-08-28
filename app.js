@@ -10,7 +10,6 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/html/index.html');
 });
 
-app.post()
 
 console.log("Сервер запущен...");
 app.listen(8080);
