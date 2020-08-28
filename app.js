@@ -1,3 +1,4 @@
+const dti  = require('dom-to-image');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -8,6 +9,7 @@ app.get('/', function (req, res) {
 
   res.sendFile(__dirname + '/html/index.html');
 });
+
 
 console.log("Сервер запущен...");
 app.listen(8080);
