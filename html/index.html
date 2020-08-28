@@ -320,7 +320,6 @@
 
   <script>
     async function sendData() {
-      let Points = results;
       let Mail = document.getElementById('mail');
 
       let data = {
@@ -330,13 +329,14 @@
 
       console.log(data);
 
-      let response = await fetch('http://80.78.240.74/getData', {
+      let response = await fetch('http://80.78.240.74:8080/getData', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'
         },
         body: JSON.stringify(data)
       });
+    }
 
   </script>
 
