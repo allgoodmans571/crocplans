@@ -27,287 +27,380 @@
   <!-- Add your site or application content here -->
 
   <div class="intro">
-    <div class="intro__inner">
-      <div class="logo">
-        <div class="logo__inner">
-          <img class="logo__img" src="../public/img/intro/logo.png" alt="">
-          <div class="intro__title">Крок</div>
+    <div class="container">
+
+      <div class="intro__inner">
+        <div class="logo">
+          <div class="logo__inner">
+            <img class="logo__img" src="../public/img/intro/logo.png" alt="">
+            <div class="intro__title">Крок</div>
+          </div>
+        </div>
+        <div class="intro__article">
+          <div class="intro__subtitle">50 образовательных целей на 2020-2021 учебный год</div>
+          <div class="intro__text">Вдохновляйтесь, показывайте свой манифест своим друзьям и оставайся на одной волне с нами, чтобы осваивать самые актуальные навыки.</div>
         </div>
       </div>
-      <div class="intro__article">
-        <div class="intro__subtitle">50 образовательных целей на 2020-2021 учебный год</div>
-        <div class="intro__text">Вдохновляйтесь, показывайте свой манифест своим друзьям и оставайся на одной волне с нами, чтобы осваивать самые актуальные навыки.</div>
-      </div>
+
     </div>
   </div>
 
 
   <section class="section" id="section1">
-    <div class="hard__skills">
+    <div class="container">
 
-      <h2 class="section__header">Hard Skills</h2>
+      <div class="hard__skills">
 
-      <div class="carousel-purpose">
-        <div class="carousel-container carousel-container1">
-          <div class="purpose__item purpose__item-p" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
+        <h2 class="section__header">Hard Skills</h2>
+
+        <div class="carousel-purpose">
+          <div class="carousel-container carousel-container1">
+            <div class="purpose__item purpose__item-p" v-on:click="wishList('Выучить новый язык программирования')">
+              <div class="purpose__text">Выучить новый язык программирования</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-p" v-on:click="wishList('Разобраться в Data Science')">
+              <div class="purpose__text">Разобраться в Data Science</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-p" v-on:click="wishList('Освоить инструменты UХ-дизайна')">
+              <div class="purpose__text">Освоить инструменты UХ-дизайна</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-p" v-on:click="wishList('Разобраться в методологии DevOps')">
+              <div class="purpose__text">Разобраться в методологии DevOps</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-p" v-on:click="wishList('Научиться лучше всех проводить CustDev')">
+              <div class="purpose__text">Научиться лучше всех проводить CustDev</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-p" v-on:click="wishList('Научиться создавать мобильные приложения')">
+              <div class="purpose__text">Научиться создавать мобильные приложения</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-p" v-on:click="wishList('Разобраться в web-аналитикe')">
+              <div class="purpose__text">Разобраться в web-аналитикe</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-p" v-on:click="wishList('Стать гуру Excel')">
+              <div class="purpose__text">Стать гуру Excel</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-p" v-on:click="wishList('Прокачать навык копирайтинга')">
+              <div class="purpose__text">Прокачать навык копирайтинга</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-p" v-on:click="wishList('Освоить Agile')">
+              <div class="purpose__text">Освоить Agile</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
           </div>
-          <div class="purpose__item purpose__item-p" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-p" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-p" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-p" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-p" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-p" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-p" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-p" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-p" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
+
+          <button class="prevBtn1 prevBtn">
+            <img class="next" src="../public/img/carousel/prev.png" alt="">
+          </button>
+          <button class="nextBtn1 nextBtn">
+            <img class="next" src="../public/img/carousel/next.png" alt="">
+          </button>
+
         </div>
-
-        <button class="prevBtn1 prevBtn">
-          <img class="next" src="../public/img/carousel/prev.png" alt="">
-        </button>
-        <button class="nextBtn1 nextBtn">
-          <img class="next" src="../public/img/carousel/next.png" alt="">
-        </button>
-
       </div>
     </div>
-  </div>
   </section>
 
   <section class="section" id="section2">
-    <div class="soft__skills">
+    <div class="container">
 
-      <h2 class="section__header">Soft Skills</h2>
+      <div class="soft__skills">
 
-      <div class="carousel-purpose">
-        <div class="carousel-container carousel-container2">
-          <div class="purpose__item purpose__item-r" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
+        <h2 class="section__header">Soft Skills</h2>
+
+        <div class="carousel-purpose">
+          <div class="carousel-container carousel-container2">
+            <div class="purpose__item purpose__item-r" v-on:click="wishList('Прокачать дизайн-мышление')">
+              <div class="purpose__text">Прокачать дизайн-мышление</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-r" v-on:click="wishList('Научиться придумывать идеи')">
+              <div class="purpose__text">Научиться придумывать идеи</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-r" v-on:click="wishList('Прокачать навык публичных выступлений')">
+              <div class="purpose__text">Прокачать навык публичных выступлений</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-r" v-on:click="wishList('Научиться делать крутые презентации')">
+              <div class="purpose__text">Научиться делать крутые презентации</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-r" v-on:click="wishList('Научиться проводить эффективные совещания и встречи')">
+              <div class="purpose__text">Научиться проводить эффективные совещания и встречи</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-r" v-on:click="wishList('Научиться работать с возражениями')">
+              <div class="purpose__text">Научиться работать с возражениями</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-r" v-on:click="wishList('Прокачать системное мышление')">
+              <div class="purpose__text">Прокачать системное мышление</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-r" v-on:click="wishList('Освоить эффективные приёмы ведения переговоров')">
+              <div class="purpose__text">Освоить эффективные приёмы ведения переговоров</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-r" v-on:click="wishList('Развить эмоциональный интеллект')">
+              <div class="purpose__text">Развить эмоциональный интеллект</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-r" v-on:click="wishList('Освоить таск-трекеры и эффективно планировать рабочий день')">
+              <div class="purpose__text">Освоить таск-трекеры и эффективно планировать рабочий день</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
           </div>
-          <div class="purpose__item purpose__item-r" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-r" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-r" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-r" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-r" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-r" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-r" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-r" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-r" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
+
+          <button class="prevBtn2 prevBtn">
+            <img class="next" src="../public/img/carousel/prev.png" alt="">
+          </button>
+          <button class="nextBtn2 nextBtn">
+            <img class="next" src="../public/img/carousel/next.png" alt="">
+          </button>
+
         </div>
-
-        <button class="prevBtn2 prevBtn">
-          <img class="next" src="../public/img/carousel/prev.png" alt="">
-        </button>
-        <button class="nextBtn2 nextBtn">
-          <img class="next" src="../public/img/carousel/next.png" alt="">
-        </button>
-
       </div>
+
     </div>
   </section>
 
   <section class="section" id="section3">
-    <div class="life__skills">
+    <div class="container">
 
-      <h2 class="section__header">Навыки для жизни</h2>
+      <div class="life__skills">
 
-      <div class="carousel-purpose">
-        <div class="carousel-container carousel-container3">
-          <div class="purpose__item purpose__item-o" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
+        <h2 class="section__header">Навыки для жизни</h2>
+
+        <div class="carousel-purpose">
+          <div class="carousel-container carousel-container3">
+            <div class="purpose__item purpose__item-o" v-on:click="wishList('Научиться учиться')">
+              <div class="purpose__text">Научиться учиться</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-o" v-on:click="wishList('Научиться скорочтению')">
+              <div class="purpose__text">Научиться скорочтению</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-o" v-on:click="wishList('Научиться подбирать мемы')">
+              <div class="purpose__text">Научиться подбирать мемы</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-o" v-on:click="wishList('Получить права')">
+              <div class="purpose__text">Получить права</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-o" v-on:click="wishList('Научиться фотографировать')">
+              <div class="purpose__text">Научиться фотографировать</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-o" v-on:click="wishList('Научиться монтировать ролики')">
+              <div class="purpose__text">Научиться монтировать ролики</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-o" v-on:click="wishList('Научиться смешно шутить')">
+              <div class="purpose__text">Научиться смешно шутить</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-o" v-on:click="wishList('Научиться вести социальные сети')">
+              <div class="purpose__text">Научиться вести социальные сети</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-o" v-on:click="wishList('Научиться готовить шашлык')">
+              <div class="purpose__text">Научиться готовить шашлык</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-o" v-on:click="wishList('Научиться путешествовать самостоятельно')">
+              <div class="purpose__text">Научиться путешествовать самостоятельно</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
           </div>
-          <div class="purpose__item purpose__item-o" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-o" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-o" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-o" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-o" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-o" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-o" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-o" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-o" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
+
+          <button class="prevBtn3 prevBtn">
+            <img class="next" src="../public/img/carousel/prev.png" alt="">
+          </button>
+          <button class="nextBtn3 nextBtn">
+            <img class="next" src="../public/img/carousel/next.png" alt="">
+          </button>
+
         </div>
-
-        <button class="prevBtn3 prevBtn">
-          <img class="next" src="../public/img/carousel/prev.png" alt="">
-        </button>
-        <button class="nextBtn3 nextBtn">
-          <img class="next" src="../public/img/carousel/next.png" alt="">
-        </button>
-
       </div>
+
     </div>
   </section>
 
   <section class="section" id="section4">
-    <div class="lang__skills">
+    <div class="container">
 
-      <h2 class="section__header">Знание языков</h2>
+      <div class="lang__skills">
 
-      <div class="carousel-purpose">
-        <div class="carousel-container carousel-container4">
-          <div class="purpose__item purpose__item-b" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
+        <h2 class="section__header">Навыки о высоком</h2>
+
+        <div class="carousel-purpose">
+          <div class="carousel-container carousel-container4">
+            <div class="purpose__item purpose__item-b" v-on:click="wishList('Научиться медитировать')">
+              <div class="purpose__text">Научиться медитировать</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-b" v-on:click="wishList('Научиться быть счастливым')">
+              <div class="purpose__text">Научиться быть счастливым</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-b" v-on:click="wishList('Научиться вставать раньше')">
+              <div class="purpose__text">Научиться вставать раньше</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-b" v-on:click="wishList('Научиться отдыхать')">
+              <div class="purpose__text">Научиться отдыхать</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-b" v-on:click="wishList('Научиться разбираться в вине')">
+              <div class="purpose__text">Научиться разбираться в вине</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-b" v-on:click="wishList('Научиться использовать память на максимум')">
+              <div class="purpose__text">Научиться использовать память на максимум</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-b" v-on:click="wishList('Научиться делать несколько дел одновременно')">
+              <div class="purpose__text">Научиться делать несколько дел одновременно</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-b" v-on:click="wishList('Научиться формулировать свои желания правильно')">
+              <div class="purpose__text">Научиться формулировать свои желания правильно</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-b" v-on:click="wishList('Научиться высыпаться')">
+              <div class="purpose__text">Научиться высыпаться</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-b" v-on:click="wishList('Научиться перестать беспокоиться')">
+              <div class="purpose__text">Научиться перестать беспокоиться</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
           </div>
-          <div class="purpose__item purpose__item-b" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-b" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-b" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-b" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-b" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-b" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-b" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-b" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-b" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
+
+          <button class="prevBtn4 prevBtn">
+            <img class="next" src="../public/img/carousel/prev.png" alt="">
+          </button>
+          <button class="nextBtn4 nextBtn">
+            <img class="next" src="../public/img/carousel/next.png" alt="">
+          </button>
         </div>
-
-        <button class="prevBtn4 prevBtn">
-          <img class="next" src="../public/img/carousel/prev.png" alt="">
-        </button>
-        <button class="nextBtn4 nextBtn">
-          <img class="next" src="../public/img/carousel/next.png" alt="">
-        </button>
-
       </div>
+  
     </div>
   </section>
 
   <section class="section" id="section5">
-    <div class="eternal__value">
+    <div class="container">
 
-      <h2 class="section__header">Вечные ценности</h2>
+      <div class="eternal__value">
 
-      <div class="carousel-purpose">
-        <div class="carousel-container carousel-container5">
+        <h2 class="section__header">Изучение языков</h2>
 
-          <div class="purpose__item purpose__item-pi" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
+        <div class="carousel-purpose">
+          <div class="carousel-container carousel-container5">
+
+            <div class="purpose__item purpose__item-pi" v-on:click="wishList('Начать работать над своим русским акцентом')">
+              <div class="purpose__text">Начать работать над своим русским акцентом</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-pi" v-on:click="wishList('Перевести раскладку телефона на изучаемый язык')">
+              <div class="purpose__text">Перевести раскладку телефона на изучаемый язык</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-pi" v-on:click="wishList('Перевести своё резюме на изучаемый тобой язык')">
+              <div class="purpose__text">Перевести своё резюме на изучаемый тобой язык</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-pi" v-on:click="wishList('Смотреть фильмы в оригинале')">
+              <div class="purpose__text">Смотреть фильмы в оригинале</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-pi" v-on:click="wishList('Начать читать новости на изучаемом языке')">
+              <div class="purpose__text">Начать читать новости на изучаемом языке</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-pi" v-on:click="wishList('Выучить язык из группы языков, который ты уже знаешь')">
+              <div class="purpose__text">Выучить язык из группы языков, который ты уже знаешь</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-pi" v-on:click="wishList('Начать общение с носителем языка')">
+              <div class="purpose__text">Начать общение с носителем языка</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-pi" v-on:click="wishList('Начать посещать онлайн разговорный клуб по изучаемому языку')">
+              <div class="purpose__text">Начать посещать онлайн разговорный клуб по изучаемому языку</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-pi" v-on:click="wishList('Научиться применять метод 90 секунд по изучению слов 10')">
+              <div class="purpose__text">Научиться применять метод 90 секунд по изучению слов 10</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
+            <div class="purpose__item purpose__item-pi" v-on:click="wishList('Подписаться на носителей изучаемого языка в социальных сетях')">
+              <div class="purpose__text">Подписаться на носителей изучаемого языка в социальных сетях</div>
+              <div class="purpose__btn">Хочу!</div>
+            </div>
           </div>
-          <div class="purpose__item purpose__item-pi" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-pi" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-pi" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-pi" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-pi" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-pi" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-pi" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-pi" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
-          <div class="purpose__item purpose__item-pi" v-on:click="wishList('Hello World')">
-            <div class="purpose__text">Хочу!</div>
-          </div>
+
+          <button class="prevBtn5 prevBtn">
+            <img class="next" src="../public/img/carousel/prev.png" alt="">
+          </button>
+          <button class="nextBtn5 nextBtn">
+            <img class="next" src="../public/img/carousel/next.png" alt="">
+          </button>
+
         </div>
-
-        <button class="prevBtn5 prevBtn">
-          <img class="next" src="../public/img/carousel/prev.png" alt="">
-        </button>
-        <button class="nextBtn5 nextBtn">
-          <img class="next" src="../public/img/carousel/next.png" alt="">
-        </button>
-
       </div>
+
     </div>
   </section>
 
   <footer class="wishlist" id="wishList">
-    <div class="wishlist__inner">
+    <div class="container">
 
-      <div class="list">
-        <h2 class="list__header section__header">Мой план на 2020 год</h2>
-        <ol class="wishlist">
-          <li class="wishlist__item" v-for="message in wishList">{{ message }}</li>
-        </ol>
-      </div>
-      <div class="list__article">
-        gdagadfgdfg
+      <div class="wishlist__inner">
+
+        <div class="list">
+          <h2 class="list__header section__header">Мой план на 2020 год</h2>
+          <ol class="wishlist">
+            <li class="wishlist__item" v-for="message in wishList">{{ message }}</li>
+          </ol>
+        </div>
+        <div class="list__article">
+          <div class="article__text">
+            КРОК поддерживает твои начинания и готов подарить 400 бобров. А еще мы уверены, что твои друзья тебя тоже поддержат.
+          </div>
+          <div class="list__instagram">
+            Делись манифестом в сторис в instagram.
+          </div>
+          <div class="cond__list">
+            1 сентября в 21:00 мы в лотерее разыграем 400 бобров среди участников, выполнивших условия конкурса:
+            <ol>
+              <li>Скачать манифест</li>
+              <li>Отметить аккаунт @CROCINK</li>
+              <li>Проследить, чтобы твой профиль был открытым</li>
+              <li>Выставить сторис с манифестом до 1.09 20:59</li>
+            </ol>
+            <div class="articleBtn">
+              <button>Загрузить!</button>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
   <script src="../public/js/vendor/modernizr-3.11.2.min.js"></script>
