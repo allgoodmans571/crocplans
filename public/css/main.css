@@ -300,6 +300,24 @@ textarea {
   margin: 10px 0;
 }
 
+.articleBtn{
+  text-align: center;
+}
+
+.articleBtn button{
+  padding: 5px 15px;
+  color: #fff;
+  background-color: #8c8c8f;
+  border: 2px solid #fff;
+  transition: all .2s linear;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.articleBtn button:hover{
+  color: #000;
+  background-color: #fff;
+}
 
 @media (max-width: 990px){
   .intro__title{
