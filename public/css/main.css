@@ -264,7 +264,7 @@ textarea {
 .wishlist__inner{
   display: flex;
   justify-content: space-around;
-  background-color: #68676C;
+  background-color: #8c8c8f;
   min-height: 600px;
 }
 
@@ -370,6 +370,11 @@ textarea {
   .list__article{
     width: 80%;
   }
+
+  .purpose__text{
+    font-size: 16px;
+  }
+
 
 }
 

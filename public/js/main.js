@@ -25,7 +25,7 @@ const prevBtn3 = document.querySelector(".prevBtn3")
 const prevBtn4 = document.querySelector(".prevBtn4")
 const prevBtn5 = document.querySelector(".prevBtn5")
 
-var step
+var size
 
 
 if (document.body.clientWidth > 770){
@@ -40,7 +40,7 @@ var widthContainer3 = size * count3.length
 var widthContainer4 = size * count4.length
 var widthContainer5 = size * count5.length
 
-var step = size + 20
+var step = size
 
 
 var widthPurpose = parseInt(window.getComputedStyle(purpose).width)

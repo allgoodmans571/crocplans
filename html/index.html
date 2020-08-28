@@ -25,7 +25,7 @@
 <body>
 
   <!-- Add your site or application content here -->
-  
+
   <div class="intro">
     <div class="intro__inner">
       <div class="logo">
@@ -41,12 +41,12 @@
     </div>
   </div>
 
-  
+
   <section class="section" id="section1">
     <div class="hard__skills">
-      
+
       <h2 class="section__header">Hard Skills</h2>
-      
+
       <div class="carousel-purpose">
         <div class="carousel-container carousel-container1">
           <div class="purpose__item purpose__item-p" v-on:click="wishList('Выучить новый язык программирования')">
@@ -90,14 +90,14 @@
             <div class="purpose__btn">Хочу!</div>
           </div>
         </div>
-        
+
         <button class="prevBtn1 prevBtn">
           <img class="next" src="../public/img/carousel/prev.png" alt="">
         </button>
         <button class="nextBtn1 nextBtn">
           <img class="next" src="../public/img/carousel/next.png" alt="">
         </button>
-      
+
       </div>
     </div>
   </div>
@@ -105,9 +105,9 @@
 
   <section class="section" id="section2">
     <div class="soft__skills">
-      
+
       <h2 class="section__header">Soft Skills</h2>
-      
+
       <div class="carousel-purpose">
         <div class="carousel-container carousel-container2">
           <div class="purpose__item purpose__item-r" v-on:click="wishList('Прокачать дизайн-мышление')">
@@ -165,9 +165,9 @@
 
   <section class="section" id="section3">
     <div class="life__skills">
-      
+
       <h2 class="section__header">Навыки для жизни</h2>
-      
+
       <div class="carousel-purpose">
         <div class="carousel-container carousel-container3">
           <div class="purpose__item purpose__item-o" v-on:click="wishList('Научиться учиться')">
@@ -211,7 +211,7 @@
             <div class="purpose__btn">Хочу!</div>
           </div>      
         </div>
-    
+
         <button class="prevBtn3 prevBtn">
           <img class="next" src="../public/img/carousel/prev.png" alt="">
         </button>
@@ -271,14 +271,14 @@
             <div class="purpose__btn">Хочу!</div>
           </div>
         </div>
-      
+
         <button class="prevBtn4 prevBtn">
           <img class="next" src="../public/img/carousel/prev.png" alt="">
         </button>
         <button class="nextBtn4 nextBtn">
           <img class="next" src="../public/img/carousel/next.png" alt="">
         </button>
-      
+
       </div>
     </div>
   </section>
@@ -332,21 +332,21 @@
             <div class="purpose__btn">Хочу!</div>
           </div>
         </div>
-      
+
         <button class="prevBtn5 prevBtn">
           <img class="next" src="../public/img/carousel/prev.png" alt="">
         </button>
         <button class="nextBtn5 nextBtn">
           <img class="next" src="../public/img/carousel/next.png" alt="">
         </button>
-      
+
       </div>
     </div>
   </section>
 
   <footer class="wishlist" id="wishList">
     <div class="wishlist__inner">
-      
+
       <div class="list">
         <h2 class="list__header section__header">Мой план на 2020 год</h2>
         <ol class="wishlist">
@@ -378,6 +378,30 @@
   <script src="../public/js/jquery.js"></script>
   <script src="../public/js/vue.js"></script>
   <script src="../public/js/main.js"></script>
+
+
+  <script>
+    async function sendData() {
+      let Points = results;
+      let Mail = document.getElementById('mail');
+
+      let data = {
+        Points: Points,
+        Mail: Mail.value
+      };
+
+      console.log(data);
+
+      let response = await fetch('http://80.78.240.74/getData', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(data)
+      });
+    }
+  </script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
