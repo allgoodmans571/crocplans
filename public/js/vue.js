@@ -20,7 +20,7 @@ app1 = new Vue({
         wishList(message){
             var idx = wishlist.wishList.indexOf(message);
             if (idx > -1) {
-                wishlist.wishList.splice(message);
+                wishlist.wishList.splice(idx, 1);
             } else{
                 wishlist.wishList.push(message);
             }
@@ -38,7 +38,7 @@ app2 = new Vue({
         wishList(message){
             var idx = wishlist.wishList.indexOf(message);
             if (idx > -1) {
-                wishlist.wishList.splice(message);
+                wishlist.wishList.splice(idx, 1);
             } else{
                 wishlist.wishList.push(message);
             }
@@ -55,7 +55,7 @@ app3 = new Vue({
         wishList(message){
             var idx = wishlist.wishList.indexOf(message);
             if (idx > -1) {
-                wishlist.wishList.splice(message);
+                wishlist.wishList.splice(idx, 1);
             } else{
                 wishlist.wishList.push(message);
             }
@@ -72,7 +72,7 @@ app4 = new Vue({
         wishList(message){
             var idx = wishlist.wishList.indexOf(message);
             if (idx > -1) {
-                wishlist.wishList.splice(message);
+                wishlist.wishList.splice(idx, 1);
             } else{
                 wishlist.wishList.push(message);
             }
@@ -89,7 +89,7 @@ app5 = new Vue({
         wishList(message){
             var idx = wishlist.wishList.indexOf(message);
             if (idx > -1) {
-                wishlist.wishList.splice(message);
+                wishlist.wishList.splice(idx, 1);
             } else{
                 wishlist.wishList.push(message);
             }
