@@ -4,7 +4,8 @@ const bodyParser = require('body-parser');
 const fs = require('fs')
 
 const { createCanvas, loadImage, Image } = require('canvas')
-const { static } = require("express")
+const { static } = require("express");
+const { text } = require('body-parser');
 
 const jsonParser = bodyParser.json()
 
@@ -33,15 +34,15 @@ app.post('/img', jsonParser, (req, res) => {
       image.src = squid
 
 
-      const canvas = createCanvas(image.width, image.height)
+      const canvas = createCanvas(image.width + 120, image.height + 120)
       const ctx = canvas.getContext('2d')
   
-      ctx.font = '50px Impact'
-      ctx.drawImage(image, 0, 0, image.width, image.height)
+      ctx.font = 'Crock Bold 30px '
+      ctx.drawImage(image, 0, 0, image.width + 120, image.height + 120)
       
     for (let index = 0; index < array.length; index++) {
       console.log();
-      ctx.fillText(array[index], 120, 450 + (60 * index))
+      ctx.fillText(String(index + 1) + ") " + array[index], 120, 550 + (80 * index))
     }
       
     // res.status(200).json({ data: `<img src="${canvas.toDataURL()}" />` });
