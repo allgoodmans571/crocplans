@@ -34,20 +34,20 @@ app.post('/img', jsonParser, (req, res) => {
       image.src = squid
 
 
-      const canvas = createCanvas(image.width + 120, image.height + 120)
+      const canvas = createCanvas(image.width + 200, image.height + 220)
       const ctx = canvas.getContext('2d')
   
-      ctx.font = 'Crock Bold 50px '
-      ctx.drawImage(image, 0, 0, image.width + 120, image.height + 120)
+      ctx.font = 'Crock Bold 32px '
+      ctx.drawImage(image, 0, 0, image.width + 200, image.height + 220)
       
     for (let index = 0; index < array.length; index++) {
       console.log();
-      ctx.fillText(String(index + 1) + ". " + array[index], 120, 490 + (80 * index))
+      ctx.fillText(String(index + 1) + ". " + array[index], 125, 520 + (80 * index))
     }
       
     // res.status(200).json({ data: `<img src="${canvas.toDataURL()}" />` });
     res.send({data:canvas.toDataURL()})
-      })
+    })
 })
 
 
