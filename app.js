@@ -42,7 +42,7 @@ app.post('/img', jsonParser, (req, res) => {
       
     for (let index = 0; index < array.length; index++) {
       console.log();
-      ctx.fillText(String(index + 1) + ") " + array[index], 120, 550 + (80 * index))
+      ctx.fillText(String(index + 1) + ". " + array[index], 120, 490 + (80 * index))
     }
       
     // res.status(200).json({ data: `<img src="${canvas.toDataURL()}" />` });
