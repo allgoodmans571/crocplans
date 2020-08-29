@@ -37,7 +37,7 @@ app.post('/img', jsonParser, (req, res) => {
       const canvas = createCanvas(image.width + 120, image.height + 120)
       const ctx = canvas.getContext('2d')
   
-      ctx.font = 'Crock Bold 30px '
+      ctx.font = 'Crock Bold 50px '
       ctx.drawImage(image, 0, 0, image.width + 120, image.height + 120)
       
     for (let index = 0; index < array.length; index++) {
