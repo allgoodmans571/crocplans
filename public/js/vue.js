@@ -2,14 +2,17 @@ wishlist = new Vue({
     el: "#wishList",
     data: {
         wishList: [
-
+            
         ]
     },
     methods: {
-       
-        
-    },
-})
+        result(){  
+           
+
+        }
+    }
+
+});
 
 app1 = new Vue({
     el: "#section1",
@@ -21,7 +24,7 @@ app1 = new Vue({
             var idx = wishlist.wishList.indexOf(message);
             if (idx > -1) {
                 wishlist.wishList.splice(idx, 1);
-            } else{
+            } else if (wishlist.wishList.length < 15) {
                 wishlist.wishList.push(message);
             }
             
@@ -39,7 +42,7 @@ app2 = new Vue({
             var idx = wishlist.wishList.indexOf(message);
             if (idx > -1) {
                 wishlist.wishList.splice(idx, 1);
-            } else{
+            } else if (wishlist.wishList.length < 15) {
                 wishlist.wishList.push(message);
             }
         }
@@ -56,7 +59,7 @@ app3 = new Vue({
             var idx = wishlist.wishList.indexOf(message);
             if (idx > -1) {
                 wishlist.wishList.splice(idx, 1);
-            } else{
+            } else if (wishlist.wishList.length < 15) {
                 wishlist.wishList.push(message);
             }
         }
@@ -73,7 +76,7 @@ app4 = new Vue({
             var idx = wishlist.wishList.indexOf(message);
             if (idx > -1) {
                 wishlist.wishList.splice(idx, 1);
-            } else{
+            } else if (wishlist.wishList.length < 15) {
                 wishlist.wishList.push(message);
             }
         }
@@ -90,7 +93,7 @@ app5 = new Vue({
             var idx = wishlist.wishList.indexOf(message);
             if (idx > -1) {
                 wishlist.wishList.splice(idx, 1);
-            } else{
+            } else if (wishlist.wishList.length < 15) {
                 wishlist.wishList.push(message);
             }
         }
