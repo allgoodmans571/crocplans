@@ -16,6 +16,10 @@
   <link rel="apple-touch-icon" href="../icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!-- подключаю скрипт который позволяет скачивать картинки -->
+  <script src="../public/js/download.js"></script>
+
+
   <link rel="stylesheet" href="../public/css/normalize.css">
   <link rel="stylesheet" href="../public/css/main.css">
 
@@ -437,17 +441,25 @@
   <script>
     async function sendData() {
       let array = document.querySelectorAll('.wishlist__item');
+      let arr1 = [];
 
+      for (let index = 0; index < array.length; index++) {
+        console.log();
+        arr1.push(array[index]['firstChild']['nodeValue'])
+      }
 
-      console.log(array);
+      console.log(arr1);
 
       let response = await fetch('http://localhost:8080/img', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'
         },
-        body: JSON.stringify(array)
-      });
+        body: JSON.stringify(arr1)
+      })
+
+      let res = await response.json();
+      download(res.data)
     }
 
   </script>

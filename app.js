@@ -6,21 +6,26 @@ const fs = require('fs')
 const { createCanvas, loadImage, Image } = require('canvas')
 const { static } = require("express")
 
+const jsonParser = bodyParser.json()
+
 
 // Write "Awesome!"
 app.use(static("public"))
 app.use('/public', express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', function (req, res) {
 
   res.sendFile(__dirname + '/html/index.html');
 });
 
-app.post('/img', (req, res) => {
+app.post('/img', jsonParser, (req, res) => {
+  console.log(req.body);
   array = req.body
-  
+
+
   for (let index = 0; index < array.length; index++) {
-    console.log(array[index]['firstChild']['nodeValue']);
+    console.log(array[index]);
   }
   
   fs.readFile(__dirname + '/template.png', function (err, squid) {
@@ -33,12 +38,14 @@ app.post('/img', (req, res) => {
   
       ctx.font = '50px Impact'
       ctx.drawImage(image, 0, 0, image.width, image.height)
-  // Draw line under text
       
-  
-      ctx.fillText("Лечу в чечню", 120, 450)
+    for (let index = 0; index < array.length; index++) {
+      console.log();
+      ctx.fillText(array[index], 120, 450 + (60 * index))
+    }
       
-      res.send('<img src="' + canvas.toDataURL() + '" />')
+    // res.status(200).json({ data: `<img src="${canvas.toDataURL()}" />` });
+    res.send({data:canvas.toDataURL()})
       })
 })
 
