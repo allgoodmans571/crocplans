@@ -3,7 +3,10 @@ const app = express();
 const bodyParser = require('body-parser');
 const fs = require('fs')
 
-const { createCanvas, loadImage, Image } = require('canvas')
+
+
+const { createCanvas, loadImage, Image, registerFont } = require('canvas')
+registerFont('public/fonts/Croc-Bold.ttf', {family: 'Crock'})
 const { static } = require("express");
 const { text } = require('body-parser');
 
@@ -23,11 +26,6 @@ app.get('/', function (req, res) {
 app.post('/img', jsonParser, (req, res) => {
   console.log(req.body);
   array = req.body
-
-
-  for (let index = 0; index < array.length; index++) {
-    console.log(array[index]);
-  }
   
   fs.readFile(__dirname + '/template.png', function (err, squid) {
       image = new Image
@@ -35,14 +33,15 @@ app.post('/img', jsonParser, (req, res) => {
 
 
       const canvas = createCanvas(image.width + 200, image.height + 220)
+
       const ctx = canvas.getContext('2d')
-  
-      ctx.font = 'Crock Bold 32px '
+      ctx.regi
+      ctx.font = '34px "Crock"'
       ctx.drawImage(image, 0, 0, image.width + 200, image.height + 220)
       
     for (let index = 0; index < array.length; index++) {
       console.log();
-      ctx.fillText(String(index + 1) + ". " + array[index], 125, 520 + (80 * index))
+      ctx.fillText(String(index + 1) + ". " + array[index], 125, 520 + (90 * index))
     }
       
     // res.status(200).json({ data: `<img src="${canvas.toDataURL()}" />` });

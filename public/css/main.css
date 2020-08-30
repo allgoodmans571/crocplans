@@ -43,7 +43,7 @@ html {
 
  @font-face {
   font-family: Crock; /* Гарнитура шрифта */
-  src: url("../fonts/Croc-Regular.ttf"); /* Путь к файлу со шрифтом */
+  src: url("../fonts/Croc-Bold.ttf"); /* Путь к файлу со шрифтом */
  }
 
 body{
