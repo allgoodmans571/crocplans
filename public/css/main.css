@@ -149,8 +149,12 @@ textarea {
 .intro__text{
   width: 85%;
   font-size: 24px;
+  margin-top: 5%;
 }
 
+.intro__text.lower{
+  margin-top: 5%;
+}
 
 .section{
   padding: 30px 0;
@@ -264,7 +268,7 @@ textarea {
 .wishlist__inner{
   display: flex;
   justify-content: space-around;
-  background-color: #8c8c8f;
+  background-color: #00A460;
   min-height: 600px;
 }
 
@@ -300,6 +304,10 @@ textarea {
   margin: 10px 0;
 }
 
+.article__text-lower{
+  margin-bottom: 20px;
+}
+
 .articleBtn{
   text-align: center;
 }
@@ -307,7 +315,7 @@ textarea {
 .articleBtn button{
   padding: 5px 15px;
   color: #fff;
-  background-color: #8c8c8f;
+  background-color: #00A460;
   border: 2px solid #fff;
   transition: all .2s linear;
   cursor: pointer;
